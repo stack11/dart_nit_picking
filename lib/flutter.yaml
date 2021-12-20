@@ -1,4 +1,4 @@
-include: package:stack11_linting/dart.yaml
+include: package:nit_picking/dart.yaml
 linter:
   rules:
     public_member_api_docs: false
