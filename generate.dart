@@ -11,6 +11,7 @@ final removedRules = [
   'avoid_catches_without_on_clauses',
   'avoid_catching_errors',
   'avoid_classes_with_only_static_members',
+  'avoid_final_parameters',
   'avoid_positional_boolean_parameters',
   'avoid_print',
   'diagnostic_describe_all_properties',

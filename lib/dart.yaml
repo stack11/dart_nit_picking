@@ -30,6 +30,7 @@ linter:
     avoid_equals_and_hash_code_on_mutable_classes: true
     avoid_escaping_inner_quotes: true
     avoid_field_initializers_in_const_classes: true
+    avoid_final_parameters: false
     avoid_function_literals_in_foreach_calls: true
     avoid_implementing_value_types: true
     avoid_init_to_null: true
@@ -66,6 +67,7 @@ linter:
     cast_nullable_to_non_nullable: true
     close_sinks: true
     comment_references: true
+    conditional_uri_does_not_exist: true
     constant_identifier_names: true
     control_flow_in_finally: true
     curly_braces_in_flow_control_structures: true
@@ -97,6 +99,8 @@ linter:
     no_adjacent_strings_in_list: true
     no_default_cases: false
     no_duplicate_case_values: true
+    no_leading_underscores_for_library_prefixes: true
+    no_leading_underscores_for_local_identifiers: true
     no_logic_in_create_state: true
     no_runtimeType_toString: true
     non_constant_identifier_names: true
@@ -155,7 +159,9 @@ linter:
     public_member_api_docs: true
     recursive_getters: true
     require_trailing_commas: true
+    secure_pubspec_urls: true
     sized_box_for_whitespace: true
+    sized_box_shrink_expand: true
     slash_for_doc_comments: true
     sort_child_properties_last: true
     sort_constructors_first: true
@@ -174,6 +180,7 @@ linter:
     unnecessary_final: false
     unnecessary_getters_setters: true
     unnecessary_lambdas: true
+    unnecessary_late: true
     unnecessary_new: true
     unnecessary_null_aware_assignments: true
     unnecessary_null_checks: false
@@ -189,6 +196,7 @@ linter:
     unrelated_type_equality_checks: true
     unsafe_html: true
     use_build_context_synchronously: true
+    use_decorated_box: true
     use_full_hex_values_for_flutter_colors: true
     use_function_type_syntax_for_parameters: true
     use_if_null_to_convert_nulls_to_bools: true
