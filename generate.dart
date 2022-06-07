@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:html/parser.dart' show parse;
 import 'package:http/http.dart' as http;
+import 'package:yaml/yaml.dart';
 
 final removedRules = [
   'always_specify_types',
@@ -30,11 +30,11 @@ final removedRules = [
 Future main() async {
   final body = (await http.get(
     Uri.parse(
-      'https://raw.githubusercontent.com/dart-lang/linter/gh-pages/lints/options/options.html',
+      'https://raw.githubusercontent.com/dart-lang/linter/master/example/all.yaml',
     ),
   ))
       .body;
-  final document = parse(body);
+  final document = loadYaml(body);
 
   var config = '''
 analyzer:
@@ -53,16 +53,8 @@ linter:
   rules:
 ''';
 
-  config += document
-      .getElementsByTagName('code')[0]
-      .text
-      .split('\n')
-      .where((final line) => line.startsWith('    - '))
-      .map((final line) => line.replaceAll('    - ', ''))
-      .map(
-        (final line) =>
-            '    $line: ${removedRules.contains(line) ? 'false' : 'true'}',
-      )
+  config += (((document as YamlMap)['linter'] as YamlMap)['rules'] as YamlList)
+      .map((final line) => '    $line: ${removedRules.contains(line) ? 'false' : 'true'}')
       .join('\n');
   File('lib/dart.yaml').writeAsStringSync(config);
 }
