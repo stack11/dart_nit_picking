@@ -17,7 +17,7 @@ linter:
     always_put_required_named_parameters_first: true
     always_require_non_null_named_parameters: true
     always_specify_types: false
-    always_use_package_imports: false
+    always_use_package_imports: true
     annotate_overrides: true
     avoid_annotating_with_dynamic: false
     avoid_bool_literals_in_conditional_expressions: true
@@ -37,7 +37,7 @@ linter:
     avoid_js_rounded_ints: true
     avoid_multiple_declarations_per_line: true
     avoid_null_checks_in_equality_operators: true
-    avoid_positional_boolean_parameters: false
+    avoid_positional_boolean_parameters: true
     avoid_print: false
     avoid_private_typedef_functions: true
     avoid_redundant_argument_values: true
@@ -108,14 +108,14 @@ linter:
     noop_primitive_operations: true
     null_check_on_nullable_type_parameter: true
     null_closures: true
-    omit_local_variable_types: false
+    omit_local_variable_types: true
     one_member_abstracts: false
     only_throw_errors: true
     overridden_fields: true
     package_api_docs: true
     package_names: true
     package_prefixed_library_names: true
-    parameter_assignments: false
+    parameter_assignments: true
     prefer_adjacent_string_concatenation: true
     prefer_asserts_in_initializer_lists: true
     prefer_asserts_with_message: true
