@@ -73,6 +73,7 @@ linter:
     constant_identifier_names: true
     control_flow_in_finally: true
     curly_braces_in_flow_control_structures: true
+    dangling_library_doc_comments: true
     depend_on_referenced_packages: true
     deprecated_consistency: true
     diagnostic_describe_all_properties: false
@@ -82,15 +83,18 @@ linter:
     empty_catches: false
     empty_constructor_bodies: true
     empty_statements: true
+    enable_null_safety: true
     eol_at_end_of_file: true
     exhaustive_cases: true
     file_names: true
     flutter_style_todos: true
     hash_and_equals: true
     implementation_imports: true
+    implicit_call_tearoffs: true
     iterable_contains_unrelated_type: true
     join_return_with_assignment: true
     leading_newlines_in_multiline_strings: true
+    library_annotations: true
     library_names: true
     library_prefixes: true
     library_private_types_in_public_api: true
@@ -183,6 +187,7 @@ linter:
     unnecessary_getters_setters: true
     unnecessary_lambdas: true
     unnecessary_late: true
+    unnecessary_library_directive: true
     unnecessary_new: true
     unnecessary_null_aware_assignments: true
     unnecessary_null_aware_operator_on_extension_on_nullable: true
