@@ -6,8 +6,6 @@ analyzer:
     flutter_style_todos: ignore
     todo: ignore
   exclude:
-    - "lib/generated_plugin_registrant.dart"
-    - "lib/l10n/**"
     - "**.g.dart"
     - "**.mocks.dart"
 linter:
