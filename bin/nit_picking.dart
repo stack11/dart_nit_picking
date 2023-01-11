@@ -36,9 +36,8 @@ Future main() async {
 
   var config = '''
 analyzer:
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: true
+  language:
+    strict-casts: true
   errors:
     flutter_style_todos: ignore
     todo: ignore
