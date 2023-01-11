@@ -13,14 +13,12 @@ final removedRules = [
   'avoid_final_parameters',
   'avoid_print',
   'diagnostic_describe_all_properties',
-  'empty_catches',
   'lines_longer_than_80_chars',
   'no_default_cases',
   'one_member_abstracts',
   'prefer_double_quotes',
   'prefer_relative_imports',
   'unnecessary_final',
-  'unnecessary_null_checks',
 ];
 
 const commitHash = '5b9bc6a';
