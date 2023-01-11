@@ -23,10 +23,12 @@ final removedRules = [
   'unnecessary_null_checks',
 ];
 
+const commitHash = '5b9bc6a';
+
 Future main() async {
   final body = (await http.get(
     Uri.parse(
-      'https://raw.githubusercontent.com/dart-lang/linter/master/example/all.yaml',
+      'https://raw.githubusercontent.com/dart-lang/linter/$commitHash/example/all.yaml',
     ),
   ))
       .body;
