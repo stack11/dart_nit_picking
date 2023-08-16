@@ -21,7 +21,7 @@ final removedRules = [
   'unnecessary_final',
 ];
 
-const commitHash = '5b9bc6a';
+const commitHash = '7f40f11';
 
 Future main() async {
   final body = (await http.get(
